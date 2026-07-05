@@ -20,9 +20,9 @@ pa u pregledniku otvoriti http://localhost:8080.
 
 ## Struktura
 
-- `Server` — socket/bind/listen/accept petlja, fork po klijentu
-- `HttpRequest` / `HttpResponse` — parsiranje zahtjeva i slaganje odgovora
-- `StaticFileHandler` — čitanje datoteka, MIME tipovi, 404 stranica, zaštita od path traversala
-- `Logger` — ispis s vremenom i bojama
+- `Server`: socket/bind/listen/accept petlja, fork po klijentu
+- `HttpRequest` / `HttpResponse`: parsiranje zahtjeva i slaganje odgovora
+- `StaticFileHandler`: čitanje datoteka, MIME tipovi, 404 stranica, zaštita od path traversala
+- `Logger`: ispis s vremenom i bojama
 
 Ograničenja: podržan je samo GET, nema HTTPS-a ni keep-alive veza.
